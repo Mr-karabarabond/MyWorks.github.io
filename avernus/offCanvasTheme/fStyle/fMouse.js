@@ -38,6 +38,24 @@ ball.style.left = x + 'px';
 ball.style.top = y + 'px';
 };
 
+$("p, h1, h2, h3, h4, h5").on({
+    mouseenter: function() {
+        $("#ball").css({
+            'transition': 'transform .3s',
+            'transform': 'scale(0.5)',
+            'border': 'none',
+            'border-bottom': '2px solid',
+            'border-radius': '0%'
+        });
+    },
+    mouseleave: function() {
+        $("#ball").css({
+            'transform': 'scale(1)',
+            'border': '2px solid #eee',
+            'border-radius': '50%'
+        });
+    }
+});
 
 $("a, .btn, textarea, input, label").on({
     mouseenter: function() {
@@ -52,7 +70,6 @@ $("a, .btn, textarea, input, label").on({
         $("#ball").css({
             'borderColor': '#eee',
             'transform': 'scale(1)',
-            'border-color': '#fff',
             'background': "none"
         });
     }
