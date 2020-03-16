@@ -1,0 +1,120 @@
+/*=========demo styles==========*/
+.btn-floating
+{
+    position: fixed;
+    z-index: 998;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    background-color: hsla(0, 0%, 98%, .1)!important;
+}
+.btn-floating:hover
+{
+    background-color: #555!important;
+}
+
+.demo_sidebar
+{
+    background-color: hsla(0, 0%, 12%, .9);
+    z-index: 9999;
+    overflow: auto;
+}
+
+.demo_contetn
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 3%;
+}
+
+.demo_contetn h4 ~ a
+{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.demo_contetn h4 ~ a span:after
+{
+    display: block;
+
+    width: 0;
+    height: 3px;
+
+    content: '';
+    -webkit-transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
+
+    background-color: #fff;
+
+    -moz--transition: width .3s ease-in-out;
+}
+
+.demo_contetn h4 ~ a span:hover:after,
+.demo_contetn h4 ~ a span:focus:after
+{
+    width: 40%;
+}
+
+.demo_contetn p
+{
+    font-size: 16px;
+}
+
+.demo_contetn p a span
+{
+    border-bottom: 1px solid white;
+}
+
+.demo
+{
+    font-weight: 400!important;
+
+    margin-right: 1%;
+    margin-bottom: 0!important;
+    margin-left: 0!important;
+    padding: 0 2% 0 2%;
+
+    background-color: grey!important;
+}
+
+button#change
+{
+    font-size: 18px;
+    font-weight: bold;
+
+    display: block;
+
+    width: 145px;
+    height: 40px;
+    margin-top: 2%;
+    padding: 0 2% 0 2%;
+
+    transition: all .4s ease-in-out;
+
+    color: #fff;
+    border: 0;
+    border-radius: 3%;
+    background: grey;
+}
+
+.demo_portf {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-height: 600px) {
+ .demo_contetn h4 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.demo_contetn h4 ~ a
+{
+    font-size: 18px;
+    font-weight: 400;
+}
+}
+/*=========/end demo styles==========*/
+
