@@ -1,6 +1,6 @@
 # Some of my projects:
 
-1. Avernus — Template that was created for Envato
+1. Avernus — Template that was created for Envato (php code is cut).
  
 2. Carbox23 — Simple landnig for car service
 
